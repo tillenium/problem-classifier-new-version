@@ -1,0 +1,54 @@
+
+<nav>
+  <ul class="pagination">
+    <% pages = @problems.size/30
+       page = page.to_i
+       %>
+    <% (0..pages).to_a.each do |page| %>
+    <li><a href="#" rel="<%=page%>"><%=page+1%></a></li>
+    <% end %>
+  </ul>
+  </nav>
+
+
+
+<div data-example-id="hoverable-table" id="data">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+	<th>Problem</th>
+	<th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @problems.each do |problem| %>
+      <tr>
+	<td class="col-md-2"><a href="<%= problem.link%>"><%= problem.name %></a></td>
+	<td class="col-md-4"><%= problem.tags %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<script>
+    $(document).ready(function(){
+	$('#data').after('<div id="nav"></div>');
+	var rowsShown = 30;
+	var rowsTotal = $('#data tbody tr').length;
+	var numPages = rowsTotal/rowsShown;
+	$('#data tbody tr').hide();
+	$('#data tbody tr').slice(0, rowsShown).show();
+	$('#nav a:first').addClass('active');
+	$('nav a').bind('click', function(){
+	    
+	    $('#nav a').removeClass('active');
+	    $(this).addClass('active');
+	    var currPage = $(this).attr('rel');
+	    var startItem = currPage * rowsShown;
+	    var endItem = startItem + rowsShown;
+	    $('#data tbody tr').css('opacity','0.0').hide().slice(startItem, endItem).
+		css('display','table-row').animate({opacity:1}, 300);
+	});
+  });
+</script>
