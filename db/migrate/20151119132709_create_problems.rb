@@ -10,7 +10,6 @@ class CreateProblems < ActiveRecord::Migration
 
     problems =  CSV.read("#{Rails.root}/public/spoj-problem-classifier.csv")
     problems.each do |problem|
-      puts problem
       Problem.new(name: problem[0], link: problem[1], tags: problem[2]).save!
     end
   end
