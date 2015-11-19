@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'problems#index'
   resources :problems do
     collection do
-      post 'search'
+      get 'search'
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
