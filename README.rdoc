@@ -1,28 +1,30 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It's an app for classification of important problems of spoj.
 
-Things you may want to cover:
+- has a feature of searching problems according the the tag.
+- also you can hide problems already done by you or any other user
 
-* Ruby version
+Note**
 
-* System dependencies
+This app is similar to: http://problemclassifier.appspot.com/
 
-* Configuration
+But I just made it for my convenience.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Reasons:
+- lack of showing the keywords list(though it's a little long)
+- the hiding problems according to a user is not working.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+How to use:
+
+Pre:
+- rails 4.2.3
+- ruby 2.2.1
+
+To install the app
+
+- clone it 
+- bundle
+- rake db:migrate
+- rails s (to start the server)
