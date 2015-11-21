@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'sprockets-rails'
 gem 'bootstrap-sass'
-
+gem "select2-rails"
 
 
 gem 'passenger'
