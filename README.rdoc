@@ -17,7 +17,7 @@ Reasons:
 
 A live running version of this app you can find at:
 
-https://lit-meadow-7030.herokuapp.com/  :-)
+https://problem-classifer-spoj.herokuapp.com/  :-)
 
 This app is running on heroku...I don't have any money so I am using a free version.
 
