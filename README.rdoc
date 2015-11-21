@@ -15,6 +15,21 @@ Reasons:
 - the hiding problems according to a user is not working.
 
 
+A live running version of this app you can find at:
+
+https://lit-meadow-7030.herokuapp.com/  :-)
+
+This app is running on heroku...I don't have any money so I am using a free version.
+
+This site would be down for 6 hours a day so I am sorry for that..
+
+What's next??
+
+- I am planning to add more problems on the list as I will complete them.
+- Problems from various resources will be added and will be available with time.
+- Also I made this site in around 2 hours so I didn't have time to look on what can I add more. I will be making changing to keep it good for user experience.
+- you can message me reagarding any issue if you face. Thanks in advance :-)
+
 
 How to use:
 
